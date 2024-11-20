@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Travels</title>
+    <link href="./styles.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Monda&display=swap" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./src/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./src/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./src/favicon-16x16.png">
+    <!-- <link rel="manifest" href="/site.webmanifest"> -->
+</head>
+
+<body>
+    <div id="main">
+        <div class="header">
+            <div class="header-company-block">
+                BUDGET TRAVELS
+            </div>
+            <div class="header-navigation-block">
+                <a class="header-navigation-link" href="./tours.html">Tours</a>
+                <a class="header-navigation-link" href="./consultation.html">Сonsultation</a>
+                <a class="header-navigation-link" href="#contacts">Contacts</a>
+                <a class="header-navigation-link" id="support-link" href="mailto:support@budgettravels.com">support@budgettravels.com</a>
+            </div>            
+        </div>
+
+        <div id="slidebar">
+            <img src="./src/slidebar1.jpg" alt="Slide 1" class="active">
+            <img src="./src/slidebar2.jpg" alt="Slide 2">
+            <img src="./src/slidebar3.jpg" alt="Slide 3">
+            <img src="./src/slidebar4.jpg" alt="Slide 4">
+            <img src="./src/slidebar5.jpg" alt="Slide 5">
+        </div>
+
+
+        <div id="about-us" class="main-content">
+            <p>
+                At Budget Travels, we make exploring the world affordable and stress-free. Discover breathtaking destinations with exclusive deals tailored for every traveler. Start your journey with us and create unforgettable memories without overspending.
+            </p>
+            <div id="why-we">
+                <h2>You will discover</h2>
+                <ul>
+                    <li>Affordable prices for everyone</li>
+                    <li>Unique destinations</li>
+                    <li>Personalized approach</li>
+                    <li>Reliability and comfort</li>
+                    <li>Easy booking process</li>
+                    <li>Experience and professionalism</li>
+                    <li>24/7 support</li>
+                </ul>
+            </div>
+            <h2>Choose the most suitable travel for you!</h2>
+            <button type="button" class="general-button" onclick="moveToPage('tours')">See tours</button>
+        </div>
+        
+        <div id="most-popular" class="main-content">
+            <h2>Most popular tours</h2>
+            <div id="most-popular-container">
+                <div class="most-popular-card">
+                    <div class="most-popular-card-image">
+                        <img src="./src/image1.jpg">
+                    </div>
+                    <div class="most-popular-card-info">
+                        <h3>Tour name</h3>
+                        <h4>Price$ for ? days</h4>
+                        <p>Short description</p>
+                    </div>
+                </div>
+            </div>
+        </div>        
+
+        <div id="contacts" class="main-content">
+            <h2>You can find us here</h2>
+            <ul>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                    <a href="https://instagram.com" class="contacts-link">Instagram: @budget_travels</a>
+                </li>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-youtube"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg> 
+                    <a href="https://youtube.com" class="contacts-link">Youtube: budget_travels</a>
+                </li>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                    <a href="https://facebook.com" class="contacts-link">Facebook: @budgetTravels</a>
+                </li>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-at-sign"><circle cx="12" cy="12" r="4"></circle><path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-3.92 7.94"></path></svg>
+                    <a class="contacts-link" href="mailto:support@budgettravels.com">Email: support@budgettravels.com</a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="mail-subscription" class="main-content">
+            <div id="mail-subscription-block">
+                <h2>Subscribe to stay updated on our latest deals and news</h2>
+                <form id="subscription-form">
+                    <input 
+                        type="email" 
+                        placeholder="Enter your email" 
+                        id="email-input" 
+                        required>
+                    <button type="submit" class="general-button">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        
+        <footer class="footer">
+            <ul>
+                <li>
+                    <a href="#main" class="footer-link">Return to start</a>
+                </li>
+                <li>
+                    <a href="./tours.html" class="footer-link">All tours</a>
+                </li>
+                <li>
+                    <a href="./feedback.html" class="footer-link">Leave feedback</a>
+                </li>
+                <li>
+                    <a href="./consultation.html" class="footer-link">Personal consultation</a>
+                </li>
+            </ul>
+            <hr>
+            <p>&copy; 2024 Budget Travels. All Rights Reserved.</p>
+        </footer>
+
+    </div>
+
+    <div id="side-navbar">
+        <div id="navbar-heading">
+            <h3>Website navigation</h3>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-navigation"><polygon points="3 11 22 2 13 21 11 13 3 11"></polygon></svg>
+        </div>
+        <div id="navbar-items">
+            <a href="#" class="navbar-link">Home</a>
+            <a href="./tours.html" class="navbar-link">Tours list</a>
+            <a href="./consultation.html" class="navbar-link">Get consultation</a>
+            <a href="./feedback.html" class="navbar-link">Leave feedback</a>
+        </div>
+
+        <div id="side-navbar-trigger">
+            <svg id="closed-icon" fill="none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg>    
+            <svg id="opened-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left" style="display: none;"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>

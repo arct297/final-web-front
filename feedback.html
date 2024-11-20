@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Travels - feedback</title>
+    <link href="./styles.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Monda&display=swap" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./src/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./src/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./src/favicon-16x16.png">
+</head>
+
+<body>
+    <div id="main">
+        <div class="header">
+            <div class="header-company-block">
+                BUDGET TRAVELS
+            </div>
+            <div class="header-navigation-block">
+                <a class="header-navigation-link" href="./tours.html">Tours</a>
+                <a class="header-navigation-link" href="./consultation.html">Сonsultation</a>
+                <a class="header-navigation-link" href="./index.html#contacts">Contacts</a>
+                <a class="header-navigation-link" id="support-link" href="mailto:support@budgettravels.com">support@budgettravels.com</a>
+            </div>            
+        </div>
+        <div id="feedback" class="main-content">
+            <div id="feedback-block">
+                <h2 class="feedback-heading">We value your feedback!</h2>
+                <form id="feedback-form" class="feedback-form">
+                    <div class="feedback-field">
+                        <label for="feedbackName">Your Name:</label>
+                        <input type="text" id="feedbackName" placeholder="Enter your name" required>
+                    </div>
+            
+                    <div class="feedback-field">
+                        <label for="feedbackEmail">Your Email:</label>
+                        <input type="email" id="feedbackEmail" placeholder="Enter your email" required>
+                    </div>
+            
+                    <div class="feedback-field">
+                        <label for="feedbackRating">Rate Your Experience:</label>
+                        <select id="feedbackRating" required>
+                            <option value="" disabled selected>Choose a rating</option>
+                            <option value="5">5 - Excellent</option>
+                            <option value="4">4 - Very Good</option>
+                            <option value="3">3 - Good</option>
+                            <option value="2">2 - Fair</option>
+                            <option value="1">1 - Poor</option>
+                        </select>
+                    </div>
+            
+                    <div class="feedback-field">
+                        <label for="feedbackDesign">Website Design:</label>
+                        <select id="feedbackDesign" required>
+                            <option value="" disabled selected>Choose an option</option>
+                            <option value="Excellent">Excellent</option>
+                            <option value="Good">Good</option>
+                            <option value="Fair">Fair</option>
+                            <option value="Poor">Poor</option>
+                        </select>
+                    </div>
+            
+                    <div class="feedback-field">
+                        <label for="feedbackNavigation">Ease of Navigation:</label>
+                        <select id="feedbackNavigation" required>
+                            <option value="" disabled selected>Choose an option</option>
+                            <option value="Excellent">Excellent</option>
+                            <option value="Good">Good</option>
+                            <option value="Fair">Fair</option>
+                            <option value="Poor">Poor</option>
+                        </select>
+                    </div>
+            
+                    <div class="feedback-field">
+                        <label for="feedbackComment">Your Comments:</label>
+                        <textarea id="feedbackComment" rows="4" placeholder="Let us know your thoughts or suggestions"></textarea>
+                    </div>
+            
+                    <div class="feedback-submit">
+                        <button type="submit" class="general-button">Submit Feedback</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        
+        <footer class="footer">
+            <ul>
+                <li>
+                    <a href="#main" class="footer-link">Return to start</a>
+                </li>
+                <li>
+                    <a href="./tours.html" class="footer-link">All tours</a>
+                </li>
+                <li>
+                    <a href="./index.html" class="footer-link">Home</a>
+                </li>
+                <li>
+                    <a href="./consultation.html" class="footer-link">Personal consultation</a>
+                </li>
+            </ul>
+            <hr>
+            <p>&copy; 2024 Budget Travels. All Rights Reserved.</p>
+        </footer>
+
+    </div>
+
+    <div id="side-navbar">
+        <div id="navbar-heading">
+            <h3>Website navigation</h3>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-navigation"><polygon points="3 11 22 2 13 21 11 13 3 11"></polygon></svg>
+        </div>
+        <div id="navbar-items">
+            <a href="./index.html" class="navbar-link">Home</a>
+            <a href="./tours.html" class="navbar-link">Tours list</a>
+            <a href="./consultation.html" class="navbar-link">Get consultation</a>
+            <a href="./feedback.html" class="navbar-link">Leave feedback</a>
+        </div>
+
+        <div id="side-navbar-trigger">
+            <svg id="closed-icon" fill="none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg>    
+            <svg id="opened-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left" style="display: none;"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        </div>
+    </div>
+
+    <script src="./feedback.js"></script>
+</body>
+</html>
